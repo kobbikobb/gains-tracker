@@ -9,5 +9,5 @@ http://localhost:8080/actuator
 https://spring.io/guides/gs/spring-boot/
 
 # Docker
-docker build -f Dockerfile -t gains-tracker .
-docker run -p 8089:8088 gains-tracker
+- docker build -f Dockerfile -t gains-tracker .
+- docker run -p 8089:8088 gains-tracker
