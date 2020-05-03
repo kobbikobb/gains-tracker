@@ -55,3 +55,14 @@ Insert Into actions (name, unit) Values ('Handstands', 'Seconds')
 Insert Into action_logs (action_id, value, date) Values (1, 30.5, '2020-04-15')
 
 Select * From actions Join action_logs on action_id = action_logs.action_id
+
+# network
+
+https://www.digitalocean.com/community/questions/how-to-ping-docker-container-from-another-container-by-name?fbclid=IwAR3RhdnqVm3itusONhXetJVo-6cwJA0a8Tw3gVIww9FmHXuVPGaiVQ6IUX8
+
+docker network create myNetwork
+
+docker network connect myNetwork web1
+docker network connect myNetwork web2 
+
+docker exec -ti web1 ping web2
